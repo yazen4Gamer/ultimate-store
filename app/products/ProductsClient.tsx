@@ -52,10 +52,9 @@ export default function ProductsPage() {
     }
 
     // Category filter
-    if (filters.categories.length > 0 && !filters.categories.includes(game.category.toLowerCase())) {
+    if (filters.categories.length > 0 && !filters.categories.includes(game.category.toLowerCase().replace(/\s+/g, "-"))) {
       return false;
     }
-
     // Platform filter
     if (filters.platforms.length > 0 && !filters.platforms.some(platform => game.platform.includes(platform))) {
       return false;
