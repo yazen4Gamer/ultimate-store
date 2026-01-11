@@ -22,7 +22,7 @@ import { toast } from "sonner";
 const ITEMS_PER_PAGE = 12;
 const PLATFORMS = ['PC', 'PlayStation 5', 'PlayStation 4', 'Xbox Series X', 'Xbox One', 'Nintendo Switch', 'Mobile'];
 
-export default function ProductsPage() {
+export default function ProductsClient() {
   const searchParams = useSearchParams();
   const categoryParam = searchParams.get('category');
   
