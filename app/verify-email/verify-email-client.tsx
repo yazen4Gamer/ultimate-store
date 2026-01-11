@@ -9,7 +9,7 @@ import { Progress } from "@/components/ui/progress";
 import { Mail, CheckCircle, AlertCircle, Clock, ArrowRight } from "lucide-react";
 import { toast } from "sonner";
 
-export default function VerifyEmailPage() {
+export default function VerifyEmailClient() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const email = searchParams.get("email");
